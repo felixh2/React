@@ -1,18 +1,18 @@
-const BlogList = (props) => {
-    const blogs = props.blogs;
-    const title = props.title;
-    return ( 
+const BlogList = ({blogs, title, handleDelete}) => {
+
+    return (
         <div className="blogList">
             <h1>{title}</h1>
-             {blogs.map(blog => (
+            {blogs.map(blog => (
                 <div className="blog-preview" key={blog.id}>
                     <h2>{blog.title}</h2>
                     <p>{blog.author}</p>
+                    <button onClick={() => handleDelete(blog.id)}>delete blog</button>
                 </div>
 
             ))}
         </div>
-     );
+    );
 }
- 
+
 export default BlogList
