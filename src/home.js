@@ -26,7 +26,7 @@ const Home = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch('http://localhost:8000/blogss')
+            fetch('http://localhost:8000/blogs')
                 .then(response => {
                     if (!response.ok) {
                         throw Error('could not fetch data');
