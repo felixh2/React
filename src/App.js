@@ -9,7 +9,7 @@ function App() {
       <Navbar/>
       <div className="content">
         <Home/>
-        <p>##{v}##</p>
+        {/* <p>##{v}##</p> */}
     
       </div>
     </div>
